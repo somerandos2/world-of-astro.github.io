@@ -36,14 +36,20 @@
         <div class="container">
             <h2>Our Popular Games</h2>
             <div class="game-list">
-                <!-- Add game thumbnails or links here -->
+                <!-- Game 1 Button that links to the first game -->
                 <div class="game-item">
-                    <h3>Game 1</h3>
-                    <button onclick="startGame('game1')">Play Game 1</button>
+                    <h3>Game 1: Space Invaders</h3>
+                    <button onclick="window.location.href='game1.html'">Play Space Invaders</button>
                 </div>
+                <!-- Game 2 Button that links to the second game -->
                 <div class="game-item">
-                    <h3>Game 2</h3>
-                    <button onclick="startGame('game2')">Play Game 2</button>
+                    <h3>Game 2: Pac-Man</h3>
+                    <button onclick="window.location.href='game2.html'">Play Pac-Man</button>
+                </div>
+                <!-- Game 3 Button that links to an external game (URL) -->
+                <div class="game-item">
+                    <h3>Game 3: Tetris</h3>
+                    <button onclick="window.location.href='https://tetris.com/play-tetris'">Play Tetris</button>
                 </div>
             </div>
         </div>
@@ -80,9 +86,9 @@
 
     <script>
         // Example game start function
-        function startGame(gameName = '') {
-            alert('Starting ' + (gameName ? gameName : 'game') + '...');
-            // Here you can add the game logic or redirect to the game page
+        function startGame() {
+            alert('Starting the game...');
+            // You can add game logic or a redirect here
         }
     </script>
 
